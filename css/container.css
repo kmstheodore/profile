@@ -1,0 +1,149 @@
+body {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-image: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 500%, 500%;
+  animation: change 10s ease-in-out infinite;
+}
+
+#list {
+  margin-right: 50px;
+}
+
+#welcome_card {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  border: 3px;
+  border-radius: 10px;
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+
+  transition: 1.5s;
+
+}
+
+#welcome_card:hover {
+
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 15px 40px;
+  transition: 1s;
+  transform: scale(1.2);
+  z-index: 2;
+
+}
+
+#bottom_card {
+
+  width: 50%;
+
+  margin-top: 200px;
+
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+
+
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border: 0px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+
+  margin: auto;
+
+  font-size: 18px;
+
+  transition: 1.5s;
+
+}
+
+#bottom_card:hover {
+  border-color: rbga(255,255,255,0.8);
+  border-radius: 10px;
+  border-style: solid;
+  transition: 1;
+  transition: 1s;
+  transform: scale(1.5);
+  border-top: rbga(255,255,255,0.8);
+  border-right: rbga(255,255,255,0.8);
+  box-shadow: rgba(0, 0, 0, 0.75) 0px 12px 32px;
+}
+
+.icon {
+  margin-top: 100px;
+  border-radius: 15px;
+  font-size: 270px;
+  color: #D5C7BC;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: -8px;
+  transition: 1.5s;
+  margin-bottom: 70px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.icon:hover {
+  transition: 1s;
+  transform: scale(1.1);
+  z-index: 2;
+  color: rgba(255,255,255,1);
+  box-shadow: rgba(0, 0, 0, 1) 0px 3px 8px;
+}
+
+#top_3_cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  text-align: row;
+  padding-bottom: 75px;
+  padding-top: -50px;
+  margin-bottom: -75px;
+}
+
+#bottom_container {
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+
+#name {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#top_text {
+
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+
+ #welcome_card > #name {
+  border-bottom: 0px solid white;
+  transition: 0.2s;
+}
+
+#welcome_card:hover > #name {
+  border-bottom: 3px solid white;
+  border-radius: 2px;
+  transition: 1s;
+}
+
+
+
+
+
+
+@keyframes change {
+  0% {background-position: 0 50%;
+  }
+  50% {background-position: 100% 50%;
+  }
+  100% {background-position: 0 50%;
+  }
+}
